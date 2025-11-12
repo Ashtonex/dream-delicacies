@@ -1,0 +1,78 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: background 0.3s ease;
+}
+
+.scrolled {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e8d8c3;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #4b2e2e;
+  animation: fadeInLogo 1.2s ease forwards;
+}
+
+@keyframes fadeInLogo {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  color: #6b4f4f;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #6b4f4f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links li a:hover,
+.active {
+  color: #d4af37;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    background: #fffaf5;
+    border: 1px solid #e8d8c3;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .show {
+    display: flex;
+  }
+}

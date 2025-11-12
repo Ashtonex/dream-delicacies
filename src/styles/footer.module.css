@@ -1,0 +1,52 @@
+.footer {
+  background: url('/assets/floral-footer.jpg') center/cover no-repeat;
+  padding: 3rem 2rem;
+  color: #4b2e2e;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.socials a {
+  color: #6b4f4f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #d4af37;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #5a4a42;
+}

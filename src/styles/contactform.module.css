@@ -1,0 +1,69 @@
+.contact {
+  padding: 4rem 2rem;
+  background: #fffaf5;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4b2e2e;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e8d8c3;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: transparent;
+}
+
+label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #6b4f4f;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  top: -0.8rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  background: #fffaf5;
+  padding: 0 0.3rem;
+  color: #d4af37;
+}
+
+button {
+  background: #d4af37;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.success {
+  font-size: 1.2rem;
+  color: #25D366;
+  font-weight: bold;
+}

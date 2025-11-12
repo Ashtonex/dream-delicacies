@@ -1,0 +1,74 @@
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #fffefc;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #4b2e2e;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #e8d8c3;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #5a4a42;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-weight: bold;
+  color: #6b4f4f;
+}
+
+.nav {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #d4af37;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav:hover {
+  color: #b38e2f;
+}
+
+.fadeIn {
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
